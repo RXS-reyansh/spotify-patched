@@ -14,18 +14,13 @@
     "undici": "^6.13.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.2.2",
-    "@commitlint/config-conventional": "^19.2.2",
     "@jest/globals": "^29.7.0",
     "@types/spotify-web-api-node": "^5.0.11",
-    "commitlint": "^19.2.2",
     "discord.js": "^14.14.1",
     "distube": "^4.2.0",
     "eslint": "^8.57.0",
     "eslint-config-distube": "^1.7.0",
     "jest": "^29.7.0",
-    "nano-staged": "^0.8.0",
-    "pinst": "^3.0.0",
     "prettier": "^3.2.5",
     "ts-jest": "^29.1.2",
     "tsup": "^8.0.2",
@@ -52,15 +47,6 @@
     "music"
   ],
   "license": "MIT",
-  "nano-staged": {
-    "*.ts": [
-      "prettier --write",
-      "eslint"
-    ],
-    "*.{json,yml,yaml}": [
-      "prettier --write"
-    ]
-  },
   "peerDependencies": {
     "distube": "^3.3.1||4"
   },
