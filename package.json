@@ -23,7 +23,6 @@
     "distube": "^4.2.0",
     "eslint": "^8.57.0",
     "eslint-config-distube": "^1.7.0",
-    "husky": "^9.0.11",
     "jest": "^29.7.0",
     "nano-staged": "^0.8.0",
     "pinst": "^3.0.0",
@@ -73,10 +72,7 @@
     "prettier": "prettier --write \"**/*.{js,ts,json,yml,yaml,md}\"",
     "build": "tsup",
     "build:check": "tsc --noEmit",
-    "update": "ncu -u && bun update",
-    "postinstall": "husky",
-    "prepack": "bun run build && pinst -d",
-    "postpack": "pinst -e"
+    "update": "ncu -u && bun update"
   },
   "typings": "./dist/index.d.ts"
 }
