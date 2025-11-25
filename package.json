@@ -1,13 +1,16 @@
 {
   "name": "@distube/spotify",
-  "version": "1.6.1",
-  "author": "Skick",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/distubejs/spotify.git"
+  "version": "1.6.1-patched",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup --dts false",
+    "prepare": "npm run build"
   },
   "main": "./dist/index.js",
   "dependencies": {
+    "tsup": "^8.5.1"
     "spotify-uri": "^4.0.1",
     "spotify-url-info": "^3.2.13",
     "spotify-web-api-node": "^5.0.2",
