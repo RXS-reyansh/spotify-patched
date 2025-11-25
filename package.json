@@ -10,7 +10,7 @@
     ".": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsup --dts false",
+    "build": "tsup src/index.ts --dts false",
     "prepare": "npm run build",
     "test": "jest",
     "lint": "eslint .",
